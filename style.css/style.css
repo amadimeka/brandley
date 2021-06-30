@@ -1,0 +1,203 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin-top:0;
+    font-size: 18px;
+    background-color: #f4f4f4;
+
+}
+.main-header{
+    font-weight: bold;
+    padding-top:30px;
+    background-color: orange;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+  
+}
+nav{
+    background-color: rgb(70, 70, 111);
+  height: 80px;
+  /* position: relative; */
+  
+}
+.main-heading{
+    margin-left: 50px;
+    background-color:transparent;
+    width: 600px;
+   
+}
+.main-heading ul{
+ list-style-type: none;
+ text-align:center;
+ padding-top: 8px;
+}
+
+.main-heading ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.main-heading ul li{
+    display: inline-flex;
+    position: relative;
+}
+.active, .main-heading ul li:hover{
+    background-color: darkred;
+    color:rgb(36, 178, 209) ;
+    padding: -5px;
+}
+.main-heading ul li a:hover{
+color:yellow ;
+}
+.sub-menu1{
+    background-color:rgba(70, 70, 111,0.8);
+    color: white;
+    position: absolute; 
+    display: none;
+    margin-top: 50px;
+    margin-left: 0px;
+     text-align: center;
+     z-index: 1;
+}
+.main-heading ul li:hover .sub-menu1{ 
+    display: block;
+}
+
+.main-heading ul li .sub-menu1 ul{
+    margin-top: 10px;
+    display: block;
+}
+.main-heading ul li .sub-menu1 ul li{
+    display: block;
+    width: 150px;
+    margin-top: 5px;
+    padding: 15px;
+
+}
+.main-heading ul li .sub-menu1 ul li:hover{
+    color: indigo;
+    background-color: #f4f4f4;
+    width: fit-content;
+    display: block;
+}
+ 
+.sub-heading{
+    width:100%;
+    height: 400px;
+    position: relative;
+
+}
+ 
+.sub-heading:before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/stock.jpg);
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+
+}
+.beeb{background-color: transparent;
+    font-weight: bold;
+}
+.container{
+    /* border: 1px #000 solid; */
+    background-color: rgb(225, 225, 225);
+    float:left;
+    width: 68%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+
+}
+
+.side-bar{
+background-color: rgb(225, 225, 225);
+    float:right;
+    width: 30%;
+    padding: 10px;
+box-sizing: border-box;
+height: 260px;
+}
+.side-bar ul{
+    text-align: center;
+    list-style-position: inside;
+    padding-top: 40px;
+}
+.clr{
+    clear: both;
+}
+footer{
+    
+    text-align: center;
+    background-color: #f1d2a4;
+}
+.main-group{
+    margin-left: 1000px;
+    padding-top: -100px;
+    
+    width: 800px;
+    /* background-color: yellow; */
+}
+form{
+    margin-top: -45px;
+    font-size: 24px;
+    }
+.group{
+    display:inline-block;
+    margin-left: 20px;
+    color: white;
+    }
+ input[type="submit"] {
+        margin-left: 5px;
+        background-color: thistle;
+        color: rgb(26, 24, 24);
+        height: 35px;
+        width: 60px;
+        border-radius: 4px;
+    }
+    
+input[type="password"]{
+    width: 200px;
+    height: 20px;
+    padding: 5px; 
+    border-radius: 6px;
+    }
+    input[type="email"]{
+        width: 200px;
+        height: 20px;
+        padding: 5px; 
+        border-radius: 6px;
+    
+        }
+        .account{
+            margin-left: 1800px;
+            margin-top: -45px;
+            color: wheat;
+
+            }
+            .sub-account:hover{background-color: lightcoral;
+                width: 110px;
+                 
+            }
+            .sub-account a:hover {
+                color: #000;
+            }
+            .sub-account a{
+                text-decoration: none;
+                color: white;
+            }
