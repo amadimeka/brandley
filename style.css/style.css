@@ -1,34 +1,36 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+ 
 }
 body{
     margin-top:0;
     font-size: 18px;
     background-color: #f4f4f4;
 
+
 }
 .main-header{
     font-weight: bold;
-    padding-top:30px;
+    padding:30px;
     background-color: orange;
     font-size: 30px;
     text-align: center;
-    height: 100px;
-    box-sizing: border-box;
     text-transform: capitalize;
   
 }
 nav{
-    background-color: rgb(70, 70, 111);
+   background-color: rgb(70, 70, 111);
   height: 80px;
-  /* position: relative; */
+  display: flex;
+
   
 }
 .main-heading{
-    margin-left: 50px;
     background-color:transparent;
-    width: 600px;
+    width: 100vw;
+    display:flex;
    
 }
 .main-heading ul{
@@ -53,7 +55,7 @@ nav{
 .active, .main-heading ul li:hover{
     background-color: darkred;
     color:rgb(36, 178, 209) ;
-    padding: -5px;
+    z-index: 100;
 }
 .main-heading ul li a:hover{
 color:yellow ;
@@ -63,7 +65,7 @@ color:yellow ;
     color: white;
     position: absolute; 
     display: none;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 0px;
      text-align: center;
      z-index: 1;
@@ -78,16 +80,12 @@ color:yellow ;
 }
 .main-heading ul li .sub-menu1 ul li{
     display: block;
-    width: 150px;
-    margin-top: 5px;
     padding: 15px;
 
 }
-.main-heading ul li .sub-menu1 ul li:hover{
-    color: indigo;
-    background-color: #f4f4f4;
-    width: fit-content;
-    display: block;
+.main-heading ul li .sub-menu1 ul li a:hover{
+    color: yellow;
+    width: 100%;
 }
  
 .sub-heading{
@@ -112,86 +110,62 @@ color:yellow ;
 
 }
 .beeb{background-color: transparent;
-    font-weight: bold;
-}
-.container{
-    /* border: 1px #000 solid; */
-    background-color: rgb(225, 225, 225);
-    float:left;
-    width: 68%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-left: 10px;
-
-}
-
-.side-bar{
-background-color: rgb(225, 225, 225);
-    float:right;
-    width: 30%;
-    padding: 10px;
-box-sizing: border-box;
-height: 260px;
-}
-.side-bar ul{
-    text-align: center;
-    list-style-position: inside;
-    padding-top: 40px;
-}
-.clr{
-    clear: both;
-}
-footer{
-    
-    text-align: center;
-    background-color: #f1d2a4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   font-size: 60px;
+   text-align: center;
+   color: indigo; 
+   padding: 0 20px 0 20px;
 }
 .main-group{
-    margin-left: 1000px;
-    padding-top: -100px;
-    
-    width: 800px;
-    /* background-color: yellow; */
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
 form{
-    margin-top: -45px;
-    font-size: 24px;
-    }
+    display: flex;
+}
+
+
 .group{
-    display:inline-block;
-    margin-left: 20px;
+    display:flex;
+    align-items: center;
     color: white;
+    margin-left: 10px;
     }
  input[type="submit"] {
-        margin-left: 5px;
+        margin-left: 10px;
         background-color: thistle;
         color: rgb(26, 24, 24);
         height: 35px;
-        width: 60px;
+     padding: 8px;
         border-radius: 4px;
     }
     
 input[type="password"]{
-    width: 200px;
-    height: 20px;
+  margin-left: 8px;
+    height: 35px;
     padding: 5px; 
     border-radius: 6px;
     }
     input[type="email"]{
-        width: 200px;
-        height: 20px;
+        margin-left: 8px;
+        height: 35px;
         padding: 5px; 
         border-radius: 6px;
     
         }
         .account{
-            margin-left: 1800px;
-            margin-top: -45px;
             color: wheat;
+            font-size: 16px;
+            width: 200px;
+            margin-left: 12px
 
             }
             .sub-account:hover{background-color: lightcoral;
-                width: 110px;
+                /* width: 110px; */
                  
             }
             .sub-account a:hover {
@@ -200,4 +174,34 @@ input[type="password"]{
             .sub-account a{
                 text-decoration: none;
                 color: white;
+            }
+            .wrapper{
+                width: 100%;
+                height: 280px;
+            }
+            .container{
+                background-color: rgb(225, 225, 225);
+                float:left;
+                width: 68%;
+                padding: 10px;
+            }
+            
+            .side-bar{
+            background-color: rgb(225, 225, 225);
+                float:right;
+                width: 30%;
+            height: 100%;
+            }
+            .side-bar ul{
+                text-align: center;
+                list-style-position: inside;
+                padding-top: 40px;
+            }
+            .clr{
+                clear: both;
+            }
+            footer{
+                
+                text-align: center;
+                background-color: #f1d2a4;
             }
